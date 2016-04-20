@@ -1,8 +1,9 @@
 #!/bin/sh
 
 if [ -d "$1/cgi-bin" ]; then
-    echo "CGI"
+    echo "CGI detected."
     exit 0
 else
+    echo "CGI not detected."
     exit 1
 fi
