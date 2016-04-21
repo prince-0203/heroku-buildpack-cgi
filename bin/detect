@@ -1,11 +1,5 @@
 #!/bin/sh
 
-echo "Check $1/cgi-bin"
-
-if [ -d "$1/cgi-bin" ]; then
-  echo "CGI detected."
-  exit 0
-else
-  echo "CGI not detected."
-  exit 1
-fi
+# this pack is valid for all apps
+echo "prince's Buildpack: detect"
+exit 0
