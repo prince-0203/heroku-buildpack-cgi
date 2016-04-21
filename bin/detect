@@ -4,5 +4,6 @@ if [ -d "$1/cgi-bin" ]; then
   echo "CGI"
   exit 0
 else
+  echo "no cgi-bin folder"
   exit 1
 fi
