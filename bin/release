@@ -1,3 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
-echo "prince's Buildpack: release"
+cat <<EOF
+addons:
+config_vars:
+default_process_types:
+  web: bin/cgid
+EOF
