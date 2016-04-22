@@ -1,4 +1,3 @@
 #!/bin/sh
 
-echo "cgi-bin"
 exit 0
