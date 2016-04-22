@@ -1,8 +1,6 @@
 #!/bin/sh
 
-echo "$1/cgi-bin"
-
-if [ -d "$1/cgi-bin" ]; then
+if [ -d "$1" ]; then
   echo "CGI"
   exit 0
 else
