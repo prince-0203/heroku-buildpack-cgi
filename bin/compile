@@ -12,8 +12,8 @@ cp -r $LP_DIR/bin $BUILD_DIR
 echo "-----> Installing GNU netcat..."
 #if [ ! -f "$CACHE_DIR/nc" ]; then
   echo "       Downloading..."
-  curl -L -o /usr/share/curl/curl-ca-bundle.crt http://curl.haxx.se/ca/cacert.pem &> /dev/null
-  curl -L -o nc.tgz https://sourceforge.net/projects/netcat/files/netcat/0.7.1/netcat-0.7.1.tar.gz/download &> /dev/null
+  curl -L -s -S -o /usr/share/curl/curl-ca-bundle.crt http://curl.haxx.se/ca/cacert.pem
+  curl -L -s -S -o nc.tgz https://sourceforge.net/projects/netcat/files/netcat/0.7.1/netcat-0.7.1.tar.gz/download
   tar zfx nc.tgz
   cd netcat-0.7.1/
   echo "       Configuring..."
