@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "$1/cgi-bin"
+
 if [ -d "$1/cgi-bin" ]; then
   echo "CGI"
   exit 0
