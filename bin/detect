@@ -2,11 +2,3 @@
 
 print "$ARGV[0]/cgi-bin";
 exit 0;
-
-if (-d "$ARGV[0]/cgi-bin") {
-  print "CGI";
-  exit 0;
-} else {
-  print "no cgi-bin folder";
-  exit 1;
-}
