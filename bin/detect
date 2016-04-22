@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/bin/sh
 
-print "$ARGV[0]/cgi-bin";
-exit 0;
+echo "$1/cgi-bin"
+exit 0
