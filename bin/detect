@@ -1,9 +1,9 @@
-#!/bin/sh
+#!/usr/bin/perl
 
-if [ -d "$1/cgi-bin" ]; then
-  echo "CGI"
-  exit 0
-else
-  echo "no cgi-bin folder"
-  exit 1
-fi
+if (-d "$ARGV[0]/cgi-bin") {
+  print "CGI";
+  exit 0;
+} else {
+  print "no cgi-bin folder";
+  exit 1;
+}
